@@ -1,0 +1,6 @@
+https://www.cursoemvideo.com/curso/curso-de-ingles-para-iniciantes-modulo-02-beginners-completo/
+
+Comece compreendendo os conceitos básicos, como variáveis, estruturas de controle (como loops e condicionais)
+e estruturas de dados (como arrays e listas), Existem muitos sites e plataformas online que oferecem exercícios
+de programação para praticar, como o Codecademy, HackerRank, LeetCode...
+Estude diferentes tipos de algoritmos e suas aplicações, como ordenação, busca, recursão...

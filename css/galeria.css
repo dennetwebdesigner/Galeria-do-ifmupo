@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2em;
+  margin-top: 2em;
+  overflow-y: auto;
+  height: 56.3vh;
+}
+
+.game-item {
+  text-align: center;
+  width: 150px;
+  cursor: pointer;
+  position: relative;
+}
+
+.game-item img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.game-item img:hover {
+  transform: scale(1.2);
+}
+
+.completion-date {
+  display: none;
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 10px;
+}
+
+.game-item.show-date .completion-date {
+  display: block;
+}
+
+/* Lightbox Styles */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 8px;
+}
+
+.lightbox .completion-date {
+  color: white;
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+.lightbox:target {
+  display: flex;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #333;
+  color: white;
+  margin-top: 2em;
+}
