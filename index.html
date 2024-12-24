@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria do Ifmupo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+            background-color: #333;
+            padding: 0.5em 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 1em;
+            background: rgb(3, 3, 3);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1em;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: white;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ifmupo Videogame etc.</h1>
+    </header>
+    <nav>
+        <a href="#jogos">Jogos Zerados</a>
+        <a href="#programacao">Programação</a>
+        <a href="#videos">Vídeos</a>
+    </nav>
+    <section id="jogos">
+        <h2>Jogos Zerados</h2>
+        <div class="gallery">
+            <!-- Link para abrir a galeria de jogos zerados em uma nova aba -->
+            <a href="galeria.html" target="_blank">
+                <img src="jogosz.jpg" alt="Imagem de destaque de Jogos Zerados" style="width:100%; border-radius:8px;">
+            </a>
+        </div>
+    </section>
+    <section id="programacao">
+        <h2>Programação de Lives</h2>
+        <p>Segunda-feira: 20h - Jogo X</p>
+        <p>Quarta-feira: 20h - Jogo Y</p>
+        <p>Sexta-feira: 20h - Jogo Z</p>
+    </section>
+    <section id="videos">
+        <h2>Vídeos Recentes</h2>
+        <ul>
+            <li><a href="#">Vídeo 1: Análise de Jogo</a></li>
+            <li><a href="#">Vídeo 2: Gameplay</a></li>
+            <li><a href="#">Vídeo 3: Dicas</a></li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2024 Galeria do Jogador | <a href="https://www.twitch.tv/ifmupotv" target="_blank">Twitch</a> | <a href="https://www.youtube.com/@ifmupo" target="_blank">YouTube</a></p>
+    </footer>
+</body>
+</html>

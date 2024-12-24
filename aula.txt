@@ -1,0 +1,280 @@
+HTML = conteúdo 
+
+CSS = estilo 
+
+Java Script = interatividade
+
+A programação de JavaScript q estou apredendo, vai ser feita dentro de um site
+que eu mesmo vou peparar.
+Usando o (HTML) e o (CSS).
+-----------
+* duas áreas básica 
+<head></head>  (cabeça) é a parte das configurações. 
+
+<head><meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ifmupo videogame Etc.</title>
+</head>
+
+
+
+<body></body>  (corpo) e essa parte é a que aparecer no site.
+
+<body>
+<h1>Olá Mundo!</h1> 
+<p>fazendo meu primeiro testes !</p>
+</body>
+------------
+* <h1></h1> é um título de nível 1 (obs) essa tag não é pra transforma letra maior.
+
+<h1>Olá Mundo!</h1>
+--------------
+<p></p> é a tag do parágrafo
+<p>fazendo meu primeiro testes !</p>
+----------
+*3 tipos de janeira bem simples 
+Window.alert()
+window.confirm()
+window.prompt()
+EX:
+<script>
+       window.alert('Bem vindo ao meu site!') 
+       window.confirm('Estou apredendo JS!')
+       window.prompt('Vamos que vamos !')
+    </script>
+
+----------
+É bom deixa os códigos com um comentário, assim ajuda muito!
+No JS comentário tem dois tipo de simbologia; //  ou /* */
+
+(obs) Esse comando é usando dentro da tag <script> </script> 
+EX:
+<script>
+       window.alert('Bem vindo ao meu site!') 
+       window.confirm('Está gostando de JS!') // Janela com botão Ok e Cancelar
+       window.prompt('Qual é o seu nome?') // Vai perguntar o nome...
+    </script>
+
+// = uma única linha
+/* e */ mais de uma linha de código
+ex:
+
+<script>
+       /*
+       window.alert('Bem vindo ao meu site!') 
+       window.confirm('Está gostando de JS!')  Janela com botão Ok e Cancelar
+       */
+window.prompt('Qual é o seu nome?')
+    </script>
+-----------
+Já no HTML a tag é assim <!---->
+ex:
+<h1>Olá Mundo!</h1> 
+<p>fazendo meu primeiro testes !</p> <!-- é ess o parágrafo -->
+-------- 
+Já no CSS é usando o /* e */ 
+ex:
+<style>
+        body {
+            background-color: rgb(5, 5, 5);
+            color: white; /* usando uma cor branca */
+            font: normal 20pt Arial;
+        }
+        h1{
+            color: rgb(250, 250, 62);
+        }
+    </style>
+
+--------------
+-Tipo de Dados e Variáveis
+-Regras : 
+*Sinal de IGUAL=, em uma expressão não é IGUAL, ele é RECEBE
+ex; var a = 5 + 3 / variável (a) RECEBE 5 + 3
+*Podem começar com letra, $ ou _
+*Não podem começar com número 
+*É possível usar letras ou números
+*É possível usar acentos e síbolos 
+*Não podem conter espaços 
+*Não podem ser palavras reservadas
+EX: var idade = 31
+    var apelido = 'ifmupo'
+
+-Dicas:
+*Maiúsculas e minúsculas fazem diferençaex: var a = 10
+    var A = 20
+São duas variáveis !
+
+*Tente criar nomes coerentes para variáveisex: var idade = 31
+    var apelido = 'ifmupo'
+----------
+*Tipos de Dados
+-number
+(Infinity, NaN)
+
+-string
+
+-boolean
+
+-null
+
+-undefined
+
+-object
+(Array)
+
+-function
+
+{Para trabalhar com esses tipos todos usaremos o comando typeof}
+> var n = 200
+> n
+200
+> typeof n
+'number'
+> n = "Google"
+'Google'
+> typeof n
+'string'
+> typeof 6
+'number'
+> typeof 6.5
+'number'
+> typeof "6.5"
+'string'
+> typeof []
+'object'
+> typeof {}
+'object'
+> typeof function(){}
+'function'
+> typeof underfined
+'undefined'
+> typeof NaN
+'number'
+> typeof null
+'object'
+--------------------
+
+*Concatenação:
+ex;
+<script>
+var nome = window.prompt('Qual é o seu nome?')
+window.alert('É um grande prazer em te conhecer,' + nome)// O sinal de (+)
+é uma concatenação (obs) se colocasse só a variável que seria,
+(nome) não daria certo. ex; window.alert(' É um grande prazer em te conhecer,nome')
+</script>
+----------------------
+A adição também usar o sinal de "+" só q para ele fazer a soma tem que ter 
+o comando "Number.parseInt" ou "Number.parseFloat".
+
+-Number.parseInt = ele faz a conversão de uma número para um número inteiro, ex; 150
+-Number.parseFloat = ele faz um número real, número com virgula, ex; 1,50
+
+ex;
+<script>
+var n1 = Number.parseInt(window.prompt('Digite um número: ')) //O comando window.prompt
+tem a caracterista de retornar uma string.
+var n2 = Number.parseInt(window.prompt('Digite outro número: ')) // Usando o comando,
+ Number.parseInt ou Number.parseFloat eu converto ele para números inteiros ou real
+com virgul.
+var s = n1 + n2
+window.alert('A soma dos valores é ' + s)
+</script> 
+---------
+(OBS) Nas versões mais atuais só o comando "Number" já faz a soma sabendo se 
+é número inteiro ou real.
+ex;
+
+<script>
+var n1 = Number(window.prompt('Digite um número: ')) 
+var n2 = Number(window.prompt('Digite outro número: ')) 
+var s = n1 + n2
+window.alert('A soma dos valores é ' + s) 
+</script>
+
+*Mas tem momento q teremos q tratar usando as outras duas opções assim forçando
+ele a converter só em número inteiro ou em real.
+----------
+
+Agora se quiser converter de "Number" para "String"
+tem duas maneiras: String() ou toString()
+ex;
+
+<script>
+var n1 = String(window.prompt('Digite um número: ')) 
+var n2 = String(window.prompt('Digite outro número: ')) 
+var s = n1 + n2
+window.alert('A soma dos valores é ' + String(s)) 
+</script>
+-------------------------
+*valor no formato monetário 
+
+*Uma forma de saber valor de salário
+ex: 
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+R$ 1.545,50
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
+US$ 1.545,50
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})
+US$ 1.545,50
+----------------------------------
+* Operadores 
+
+- tem várias mais vamos estudar esse por enquanto;
+
+*aritméticos
+*atribuição 
+*relacionais
+*lógicos
+*ternário
+===
+aritméticos
+[+],[-],[*],[/],[%],[**]
+ex;
+
+5+2=7
+5-2=3
+5*2=10
+5/2=2.5 {Essa é a divisão real, onde leva vírgula }
+5%2=1   {Essa já é o resto da divisão inteira, onde não se usa a vírgula,
+então quando chegar a hora de usar a vírgula vc para a conta.
+ex; 5 dividido por 2 dá 2 e sobra 1. se eu fosse continuar dividindo teria q por a 
+vírgula do lado do 2 e um zero do lado do 1. e constinuar dividindo até chegar no 
+resto da divisão 0. Então o 1 é o resto da divisão inteira.}
+5**2=25 {Esse é a potencia/ao quadrado}
+
+(OBS) A ordem de precedência dos operadores é anlisada sempre primeiro 
+os PARÊNTESES() depois as POTÊNCIAS**, em seguida vem as MULTIPLICAÇÕES*, DIVISÕES/ e
+o RESTO DA DIVISÕES%, esse vão vim pela ordem de precedência.
+e por fim a SOMAS+, e a SUBTRAÇÕES- .
+
+[Auto-atribuições]
+EX: var n = 3 /Assim o (n) ta valendo 3
+Se na próxima linha eu colocar ex; n = n + 4 /Significa que eu fou soma oque
+ta depois do RECEBE=, e o resultado eu vou jogar dentro de (n).
+Então (n) q tava valendo 3 vai passar a valer 7.
+(OBS) Se a mesma variável RECEBE=, ela mesmo ex; { n = n + 4 }, 
+vc pode usar o { n += 4 }, mas se fosse ex; {n = x + 4 } não daria certo porque a
+VARIÁVEL é diferente.
+-------------
+[Incremento]
+EX: var n = 10 / Assim o (n) ta valendo 10, mas posso simplificar colocando (n++),
+ele vai mostrar (10), mais na próxima vai mostrar (11), se agora eu colocar
+(n--), ela vai mostar (11), mas na próxima será (10). 
+(OBS) Isso acontecer pq o sinal ta vinde depois da variável, ex; n++ .
+tem como colocar o sinal para vim antes assim chamado de [Pré-incremento], ex; ++n
+ele assim já soma antes , sem precisar repetir o valor como no exemplo de cima.
+----------------------
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+https://www.youtube.com/watch?v=Jszz7M676y8&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=29&ab_channel=CursoemV%C3%ADdeo
+
+HTML = conteúdo 
+
+CSS = estilo 
+
+Java Script = interatividade
+
+ícones disponíveis
+https://www.w3schools.com/icons/fontawesome_icons_webapp.asp
+
+saber o número da tecla-
+https://www.toptal.com/developers/keycode
+
+https://www.iconarchive.com/
+https://www.favicon.cc/
+https://favicon.io/favicon-generator/
+
+
+
