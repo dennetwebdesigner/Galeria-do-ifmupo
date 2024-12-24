@@ -93,9 +93,9 @@
 
     <section class="gallery">
         <!-- Exemplo de jogo zerado -->
-        <div class="game-item">
+        <div class="game-item" onmouseover="showDate(this)" onmouseout="hideDate(this)">
             <a href="#lightbox1">
-                <img src="jogos zerados/Silent Hill [NTSC-U].png" alt="Capa de Silent Hill">
+                <img src="imagens/Silent Hill.png" alt="Capa de Silent Hill">
             </a>
             <div class="completion-date">Data de Conclusão: 12/12/2024</div>
         </div>
@@ -103,7 +103,7 @@
         <!-- Lightbox para exibir a imagem maior -->
         <div id="lightbox1" class="lightbox">
             <a href="#">
-                <img src="jogos zerados/Silent Hill [NTSC-U].png" alt="Capa de Silent Hill">
+                <img src="imagens/Silent Hill.png" alt="Capa de Silent Hill">
             </a>
             <div class="completion-date">Data de Conclusão: 12/12/2024</div>
         </div>
@@ -115,5 +115,14 @@
         <p>&copy; 2024 Galeria do Jogador | <a href="https://www.twitch.tv/ifmupotv" target="_blank">Twitch</a> | <a href="https://www.youtube.com/@ifmupo" target="_blank">YouTube</a></p>
     </footer>
 
+    <script>
+        function showDate(element) {
+            element.classList.add('show-date');
+        }
+
+        function hideDate(element) {
+            element.classList.remove('show-date');
+        }
+    </script>
 </body>
 </html>
